@@ -930,6 +930,7 @@ ul {list-style: none;} */
 
 /* ще є третій варіант метод calc так и сделал */
 /* calc((100% - сумма маржинов в строке(или кол-во маржинов в строке помноженое на значение маржина в px)) / на количество елементов в строке*/
+
 .filter-card {
   /* width: 370px; */
   width: calc((100% - 60px) / 3);
@@ -961,7 +962,11 @@ ul {list-style: none;} */
     margin-bottom: 30px;
 } */
 
-.link-portfolio 
+.link-portfolio {
+display: block;
+}
+
+
 
 .link-img {
   display: block;
@@ -970,26 +975,32 @@ ul {list-style: none;} */
   
 }
 
-
-
-.filter-card:hover .filter-description {
-  transform: translateY(0);
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.filter-card:focus .filter-description {
-  transform: translateY(0);
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.filter-card:hover,
-.filter-card:focus {
+.filter-card:hover .filter-description,
+.link-portfolio:focus .filter-description {
+  transform: translateY(0); 
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-
 }
+
+
+/* .link-portfolio:focus .filter-description {
+  transform: translateY(0);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+} */
+/* .filter-card:hover .filter-description {
+  transform: translateY(0);
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.link-portfolio:focus .filter-description {
+  transform: translateY(0);
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+} */
+
+
 
 .filter-card-div {
   padding: 20px 24px;
