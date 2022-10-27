@@ -160,13 +160,15 @@ ul {list-style: none;} */
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition: color 250ms;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
   opacity: 1;
-  transition: color 250ms;
+  
 }
 
 .site-nav .link.current {
@@ -192,13 +194,17 @@ ul {list-style: none;} */
   padding-right: 30px;
 }
 
+.link {
+  transition: color 250ms;
+}
+
 .link-icon {
   fill: var(--primary-text-color);
 }
 
 .link:hover .link-icon {
   fill: var(--accent-color);
-  transition: fill 250ms;
+  
 }
 
 /* .net-icon:hover {
@@ -221,6 +227,8 @@ ul {list-style: none;} */
 
 .link-icon {
   margin-right: 10px;
+
+  transition: fill 250ms;
 }
 
 .connection .link {
@@ -234,17 +242,19 @@ ul {list-style: none;} */
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition: fill 250ms;
 }
 
 .connection .link:hover,
 .connection .link:focus {
   fill: var(--accent-color);
-  transition: fill 250ms;
+  
 }
 
 .link:focus .link-icon {
   fill: var(--accent-color);
-  transition: fill 250ms;
+  
 }
 
 /* -------------------------------------------------------------------------------------------------------------------- */
@@ -299,17 +309,19 @@ ul {list-style: none;} */
   border-radius: 4px;
 
   cursor: pointer;
+
+  transition: background-color 250ms;
 }
 
 .button:hover,
 .button:active {
   background-color: var(--button-background-active-color);
-  transition: background-color 250ms;
+   
 }
 
 .button:focus {
   background-color: var(--button-background-active-color);
-  transition: background-color 250ms;
+  
 }
 
 /* ----------------------------------------------------------- */
@@ -482,17 +494,18 @@ ul {list-style: none;} */
 }
 
 .title-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 224px;
   height: 70px;
   width: 100%;
-  padding-top: 27px;
-  padding-bottom: 27px;
-
+  padding: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
+  
   letter-spacing: 0.03em;
   text-transform: uppercase;
   z-index: 1;
@@ -574,27 +587,30 @@ ul {list-style: none;} */
   justify-content: center;
   background-color: white;
   border-radius: 50%;
+
+  transition: fill 250ms;
+  transition: background-color 250ms;
 }
 
 .net-icon:hover {
   fill: white;
-  transition: fill 250ms;
+  
 }
 
 .soc-link:hover,
 .soc-link:focus {
   background-color: #2196f3;
-  transition: background-color 250ms;
+  
 }
 
 .soc-link:hover .net-icon {
   fill: white;
-  transition: fill 250ms;
+   
 }
 
 .soc-link:focus .net-icon {
   fill: white;
-  transition: fill 250ms;
+  
 }
 
 .net-icon {
@@ -630,6 +646,7 @@ ul {list-style: none;} */
 .clients-item {
   height: 92px;
   width: calc((100% - 150px) / 6);
+  transition: fill 250ms, border 250ms;
 }
 /* A */
 .clients-button {
@@ -640,6 +657,8 @@ ul {list-style: none;} */
   width: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  transition: fill 250ms;
 }
 /* SVG */
 .clients-icon {
@@ -650,14 +669,14 @@ ul {list-style: none;} */
 .clients-button:hover .clients-icon,
 .clients-button:focus .clients-icon {
   fill: var(--accent-color);
-  transition: fill 250ms;
+   
 }
 
 .clients-item:hover .clients-button,
 .clients-item:focus .clients-button {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
-  transition: fill 250ms border 250ms;
+  
 }
 
 /* 
@@ -740,6 +759,8 @@ ul {list-style: none;} */
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+
+  transition: color 250ms;
 }
 
 .address .link {
@@ -752,13 +773,13 @@ ul {list-style: none;} */
 .link:hover,
 .link:focus {
   color: var(--accent-color);
-  transition: color 250ms;
+  
 }
 
 .map-link:hover,
 .map-link:focus {
   color: var(--accent-color);
-  transition: color 250ms;
+  
 }
 
 /* ----------------------------------------------------------- */
@@ -792,24 +813,27 @@ ul {list-style: none;} */
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
+  transition: fill 250ms;
+  transition: background-color 250ms;
 }
 
 .footer-net-icon:hover,
 .footer-net-icon:focus {
   fill: white;
-  transition: fill 250ms;
+  
 }
 
 .footer-soc-link:hover,
 .footer-soc-link:focus {
   background-color: #2196f3;
-  transition: background-color 250ms;
+  
 }
 
 .footer-soc-link:hover .net-icon,
 .footer-soc-link:focus {
   fill: white;
-  transition: fill 250ms;
+  
 }
 
 .footer-net-icon {
@@ -823,8 +847,8 @@ ul {list-style: none;} */
 
 /* ----------------------------------------------------------------------------------------------------------------- */
 
+/* < !--Спрятали заголовок ! ! ! --> */
 .visually-hidden-portfolio {
-  /* < !--Спрятали заголовок ! ! ! --> */
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -882,6 +906,8 @@ ul {list-style: none;} */
   border-radius: 4px;
 
   cursor: pointer;
+
+  transition: color 250ms, background-color 250ms, box-shadow 250ms;
 }
 
 .button-portfolio:hover,
@@ -890,7 +916,7 @@ ul {list-style: none;} */
   background-color: var(--button-background-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: color 250ms, background-color 250ms, box-shadow 250ms;
+  
 }
 
 /* --------------------------------------------------------- */
@@ -905,11 +931,13 @@ ul {list-style: none;} */
 /* calc((100% - сумма маржинов в строке(или кол-во маржинов в строке помноженое на значение маржина в px)) / на количество елементов в строке*/
 .filter-card {
   /* width: 370px; */
-
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
   background: var(--accent-color-two);
+
+  transition: box-shadow 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-card:nth-child(3n) {
@@ -932,23 +960,25 @@ ul {list-style: none;} */
     margin-bottom: 30px;
 } */
 
-.link-portfolio {
+.link-portfolio 
+
+.link-img {
   display: block;
   position: relative;
   overflow: hidden;
+  
 }
 
-.link-portfolio:hover .filter-description,
-.link-portfolio:focus {
+.filter-card:hover .filter-description,
+.filter-card:focus {
   transform: translateY(0);
 }
 
-.link-portfolio:hover,
-.link-portfolio:focus {
+.filter-card:hover,
+.filter-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .filter-card-div {
@@ -980,7 +1010,7 @@ ul {list-style: none;} */
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 110px);
+  height: 100%;
   padding: 63px 24px 173px 24px;
 
   font-weight: 400;
@@ -990,7 +1020,7 @@ ul {list-style: none;} */
   color: var(--accent-color-two);
   background-color: rgba(33, 150, 243, 0.9);
 
-  transform: translateY(calc(100% + 110px));
+  transform: translateY(100%);
   transition: 250ms;
 }
 
