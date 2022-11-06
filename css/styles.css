@@ -533,11 +533,15 @@ ul {list-style: none;} */
   opacity: 0;
 }
 
-.checkbox-input:checked + .icon-check {
+.checkbox-input:checked + .input-div .icon-check {
   opacity: 1;
-  border-color: transparent;
+  
 }
 
+.checkbox-input:checked+.input-div  {
+  border-color: var(--checkbox-color-active);
+  background-color: var(--button-background-color);
+}
 
 .checkbox-label {
   display: flex;
