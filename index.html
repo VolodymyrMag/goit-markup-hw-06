@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-05</title>
+    <title>goit-markup-hw-06</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -70,7 +70,7 @@
       <section class="section-hero">
         <div class="container">
           <h1 class="section-hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button" data-modal-open>Замовити послугу</button>
+          <button type="button" class="btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- ---------------------------------------------------------------------->
@@ -425,8 +425,9 @@
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   class="map-link"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+                  >
+                  <span>м. Київ, пр-т Лесі Українки, 26</span>
+                  </a>
               </li>
               <li>
                 <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
@@ -476,23 +477,23 @@
           <div class="footer-mail">
             <h4 class="foter-title-social">Підпишіться на розсилку</h4>
 
-            <div class="footer-form-mail">
-              <label for="mail"></label>
-              <input
-                class="form-mail-input"
-                type="mail"
-                name="mail"
-                id="mail"
-                placeholder="E-mail"
-              />
+            <form class="footer-form-mail">
+              <label for="mail"
+                ><input
+                  class="form-mail-input"
+                  type="mail"
+                  name="mail"
+                  id="mail"
+                  placeholder="E-mail"
+              /></label>
 
-              <a href="#" class="form-mail-batton">
+              <button type="submit" class="btn">
                 <span>Підписатися</span>
-                <svg class="footer-mail-icon" width="24" height="24">
+                <svg class="btn-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
-              </a>
-            </div>
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -510,68 +511,71 @@
 
         <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
         <form class="contact-form" name="contact-form" novalidate>
-          <label class="form-label" for="person-name">Ім'я</label>
-          <div class="form-control">
-            <input class="form-input" id="person-name" type="text" name="person-name" />
-            <svg class="form-icon" width="12" height="12">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
-          </div>
+          <label class="form-label" for="person-name">
+            Ім'я
+            <spam class="form-control">
+              <input class="form-input" id="person-name" type="text" name="person-name" />
+              <svg class="form-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </spam>
+          </label>
 
-          <label class="form-label" for="tel">Телефон</label>
-          <div class="form-control">
-            <input class="form-input" id="tel" type="tel" name="tel" />
-            <svg class="form-icon" width="13" height="13">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-          </div>
+          <label class="form-label" for="tel">
+            Телефон
+            <span class="form-control">
+              <input class="form-input" id="tel" type="tel" name="tel" />
+              <svg class="form-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg> </span
+          ></label>
 
-          <label class="form-label" for="email">Пошта</label>
-          <div class="form-control">
-            <input class="form-input" id="email" type="email" name="email" />
-            <svg class="form-icon" width="15" height="12">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-          </div>
+          <label class="form-label" for="email">
+            Пошта
+            <span class="form-control">
+              <input class="form-input" id="email" type="email" name="email" />
+              <svg class="form-icon" width="15" height="12">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg> </span
+          ></label>
 
-          <label class="form-label" for="person-coment">Коментар</label>
-          <div class="form-comment-div">
-            <textarea
-              class="form-comment"
-              name="person-coment"
-              id="person-coment"
-              weidth="448"
-              rows="10"
-              placeholder="Введіть техт"
-            ></textarea>
-          </div>
+          <label class="form-label" for="person-coment">
+            Коментар
+            <span class="form-comment-div">
+              <textarea
+                class="form-comment"
+                name="person-coment"
+                id="person-coment"
+                weidth="448"
+                rows="10"
+                placeholder="Введіть техт"
+              ></textarea></span
+          ></label>
 
-          <div class="form-checkbox">
-            <label class="checkbox-label" for="policy">
-              <input
-                class="checkbox-input visually-hidden"
-                type="checkbox"
-                name="policy"
-                id="policy"
-              />
-              <div class="input-div">
-                <svg class="icon-check" width="16" height="15">
-                  <use href="./images/icons.svg#icon-check"></use>
-                </svg>
-              </div>
-              Погоджуюся з розсилкою та приймаю
-              <a
-                class="checkbox-dogovir"
-                href="https://www.google.com.ua"
-                target="_blank"
-                title="Пошукова система Google"
-                title="Договір"
-                >Умови договору</a
-              >
-            </label>
-          </div>
+          <label class="checkbox-label" for="policy">
+            <input
+              class="checkbox-input visually-hidden"
+              type="checkbox"
+              name="policy"
+              id="policy"
+            />
+            <span class="input-div">
+              <svg class="icon-check" width="16" height="15">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            Погоджуюся з розсилкою та приймаю
+            <a
+              class="checkbox-dogovir"
+              href="https://www.google.com.ua"
+              target="_blank"
+              title="Пошукова система Google"
+              title="Договір"
+              >Умови договору</a
+            >
+          </label>
 
-          <button type="submit" class="form-button">Відправити</button>
+          <button type="submit" class="btn">Відправити</button>
         </form>
       </div>
     </div>
